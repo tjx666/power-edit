@@ -1,8 +1,8 @@
 {
-    "name": "awesome-vscode-extension-boilerplate",
-    "displayName": "Awesome VSCode Extension Boilerplate",
-    "version": "0.0.11",
-    "description": "An awesome vscode extension boilerplate",
+    "name": "power-edit",
+    "displayName": "Power Edit",
+    "version": "0.0.1",
+    "description": "a vscode extension enhance edit experience",
     "publisher": "YuTengjing",
     "private": true,
     "preview": true,
@@ -12,18 +12,23 @@
         "email": "ytj2713151713@gmail.com"
     },
     "license": "SEE LICENSE IN LICENSE",
-    "homepage": "https://github.com/tjx666/awesome-vscode-extension-boilerplate/blob/master/README.md",
+    "homepage": "https://github.com/tjx666/power-edit/blob/master/README.md",
     "repository": {
         "type": "git",
-        "url": "https://github.com/tjx666/awesome-vscode-extension-boilerplate"
+        "url": "https://github.com/tjx666/power-edit"
     },
     "bugs": {
-        "url": "https://github.com/tjx666/awesome-vscode-extension-boilerplate/issues",
+        "url": "https://github.com/tjx666/power-edit/issues",
         "email": "ytj2713151713@gmail.com"
     },
     "keywords": [
-        "boilerplate",
-        "template"
+        "copy",
+        "cut",
+        "delete",
+        "duplicate",
+        "edit",
+        "move",
+        "select"
     ],
     "categories": [
         "Other"
@@ -37,14 +42,14 @@
         {
             "url": "https://img.shields.io/badge/PRs-welcome-brightgreen.svg",
             "description": "PRs Welcome",
-            "href": "https://github.com/tjx666/awesome-vscode-extension-boilerplate"
+            "href": "https://github.com/tjx666/power-edit"
         }
     ],
     "activationEvents": [],
     "contributes": {
         "commands": [
             {
-                "command": "awesome-vscode-extension-boilerplate.helloWorld",
+                "command": "power-edit.helloWorld",
                 "title": "Hello World"
             }
         ]
@@ -85,25 +90,25 @@
     "devDependencies": {
         "@types/glob": "^8.1.0",
         "@types/mocha": "^10.0.1",
-        "@types/node": "^18.15.3",
+        "@types/node": "^18.15.9",
         "@types/vscode": "^1.76.0",
         "@vscode/test-electron": "^2.3.0",
         "@vscode/vsce": "^2.18.0",
         "@yutengjing/eslint-config-typescript": "^0.2.8",
         "@yutengjing/prettier-config": "^0.0.1",
         "bumpp": "^9.0.0",
-        "esbuild": "^0.17.12",
+        "esbuild": "^0.17.13",
         "esbuild-visualizer": "^0.4.0",
         "eslint": "^8.36.0",
-        "glob": "^9.3.0",
+        "glob": "^9.3.2",
         "lint-staged": "^13.2.0",
         "mocha": "^10.2.0",
         "ovsx": "^0.8.0",
-        "prettier": "^2.8.4",
-        "rimraf": "^4.4.0",
+        "prettier": "^2.8.7",
+        "rimraf": "^4.4.1",
         "simple-git-hooks": "^2.8.1",
         "stale-dep": "^0.6.0",
-        "tsx": "^3.12.5",
+        "tsx": "^3.12.6",
         "typescript": "^5.0.2"
     }
 }
