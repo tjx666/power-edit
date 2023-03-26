@@ -16,7 +16,7 @@ class SearchResult {
     }
 }
 
-function findBackward(text: string, offset: number): SearchResult | undefined {
+function findBackward(text: string, offset: number): SearchResult | void {
     const bracketStack: string[] = [];
     for (let i = offset; i >= 0; i--) {
         const char = text.charAt(i);
@@ -41,7 +41,7 @@ function findBackward(text: string, offset: number): SearchResult | undefined {
     }
 }
 
-function findForward(text: string, index: number): SearchResult | undefined {
+function findForward(text: string, index: number): SearchResult | void {
     const bracketStack: string[] = [];
     for (let i = index; i < text.length; i++) {
         const char = text.charAt(i);
