@@ -5,6 +5,7 @@
 import vscode from 'vscode';
 
 import { isBracketsMatch, isCloseBracket, isOpenBracket, isQuoteBracket } from './utils';
+import { configuration } from '../../configuration';
 
 class SearchResult {
     bracket: string;
@@ -74,10 +75,13 @@ function getSearchContext(editor: vscode.TextEditor, selection: vscode.Selection
     };
 }
 
-export function selectBracketMultiCursor(editor: vscode.TextEditor, includeBracket: boolean) {
+export async function selectBracketMultiCursor(editor: vscode.TextEditor, includeBracket: boolean) {
     editor.selections = editor.selections.map((originSelection) => {
         return selectBracket(editor, originSelection, includeBracket) ?? originSelection;
     });
+    if (configuration.copyWhenSelectBracket) {
+        await vscode.commands.executeCommand('editor.action.clipboardCopyAction');
+    }
 }
 
 function selectBracket(

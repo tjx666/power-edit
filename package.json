@@ -60,7 +60,17 @@
                 "command": "power-edit.selectByIndent",
                 "title": "Power Edit: Select by Indent"
             }
-        ]
+        ],
+        "configuration": {
+            "title": "Modify File Warning",
+            "properties": {
+                "power-edit.copyWhenSelectBracket": {
+                    "title": "whether copy the selection when trigger bracket select",
+                    "type": "boolean",
+                    "default": false
+                }
+            }
+        }
     },
     "eslintConfig": {
         "extends": "@yutengjing/eslint-config-typescript",

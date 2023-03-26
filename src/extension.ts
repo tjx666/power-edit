@@ -1,7 +1,15 @@
 import vscode from 'vscode';
 
+import { updateConfiguration } from './configuration';
+
 export function activate(context: vscode.ExtensionContext) {
     const { commands } = vscode;
+
+    vscode.workspace.onDidChangeConfiguration(
+        () => updateConfiguration,
+        null,
+        context.subscriptions,
+    );
 
     const registerTextEditorCommand = (
         commandName: string,
