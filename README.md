@@ -1,22 +1,43 @@
-# vscode extension boilerplate
+# Power Edit
 
 <div align="center">
 
-[![Version](https://img.shields.io/visual-studio-marketplace/v/YuTengjing.awesome-vscode-extension-boilerplate)](https://marketplace.visualstudio.com/items/YuTengjing.awesome-vscode-extension-boilerplate/changelog) [![Installs](https://img.shields.io/visual-studio-marketplace/i/YuTengjing.awesome-vscode-extension-boilerplate)](https://marketplace.visualstudio.com/items?itemName=YuTengjing.awesome-vscode-extension-boilerplate) [![Downloads](https://img.shields.io/visual-studio-marketplace/d/YuTengjing.awesome-vscode-extension-boilerplate)](https://marketplace.visualstudio.com/items?itemName=YuTengjing.awesome-vscode-extension-boilerplate) [![Rating Star](https://img.shields.io/visual-studio-marketplace/stars/YuTengjing.awesome-vscode-extension-boilerplate)](https://marketplace.visualstudio.com/items?itemName=YuTengjing.awesome-vscode-extension-boilerplate&ssr=false#review-details) [![Last Updated](https://img.shields.io/visual-studio-marketplace/last-updated/YuTengjing.awesome-vscode-extension-boilerplate)](https://github.com/tjx666/awesome-vscode-extension-boilerplate)
+[![Version](https://img.shields.io/visual-studio-marketplace/v/YuTengjing.power-edit)](https://marketplace.visualstudio.com/items/YuTengjing.power-edit/changelog) [![Installs](https://img.shields.io/visual-studio-marketplace/i/YuTengjing.power-edit)](https://marketplace.visualstudio.com/items?itemName=YuTengjing.power-edit) [![Downloads](https://img.shields.io/visual-studio-marketplace/d/YuTengjing.power-edit)](https://marketplace.visualstudio.com/items?itemName=YuTengjing.power-edit) [![Rating Star](https://img.shields.io/visual-studio-marketplace/stars/YuTengjing.power-edit)](https://marketplace.visualstudio.com/items?itemName=YuTengjing.power-edit&ssr=false#review-details) [![Last Updated](https://img.shields.io/visual-studio-marketplace/last-updated/YuTengjing.power-edit)](https://github.com/tjx666/power-edit)
 
-![test](https://github.com/tjx666/awesome-vscode-extension-boilerplate/actions/workflows/test.yml/badge.svg) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com) [![Github Open Issues](https://img.shields.io/github/issues/tjx666/awesome-vscode-extension-boilerplate)](https://github.com/tjx666/awesome-vscode-extension-boilerplate/issues) [![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg?style=flat-square)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
+![test](https://github.com/tjx666/power-edit/actions/workflows/test.yml/badge.svg) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com) [![Github Open Issues](https://img.shields.io/github/issues/tjx666/power-edit)](https://github.com/tjx666/power-edit/issues) [![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg?style=flat-square)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
 
 </div>
 
 ## Features
 
-- github actions support publish extension to both vs marketplace and open vsx
-- pnpm/eslint/prettier/ling-staged/simple-git-hooks/stale-dep
-- use esbuild to bundle extension
+> **NOTE**
+> By default, this extension will not set any shortcuts.
+
+### Bracket Select
+
+I just migrate code from [Bracket Select](https://github.com/jhasse/vscode-bracket-select) and make some code optimization.
+
+recommend set following shortcut:
+
+```jsonc
+[
+  {
+    "key": "ctrl+]",
+    "command": "power-edit.selectBracketContent",
+    "when": "editorTextFocus && editorLangId != 'markdown'"
+  },
+  {
+    "key": "ctrl+shift+]",
+    "command": "power-edit.selectBracket",
+    "when": "editorTextFocus && editorLangId != 'markdown'"
+  }
+]
+```
 
 ## My extensions
 
 - [Open in External App](https://github.com/tjx666/open-in-external-app)
+- [Neo File Utils](https://github.com/tjx666/vscode-neo-file-utils)
 - [VSCode FE Helper](https://github.com/tjx666/vscode-fe-helper)
 - [VSCode archive](https://github.com/tjx666/vscode-archive)
 - [Modify File Warning](https://github.com/tjx666/modify-file-warning)
