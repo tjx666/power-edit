@@ -34,6 +34,22 @@ recommend set following shortcut:
 ]
 ```
 
+### Select by Indent
+
+![Select by Indent](https://github.com/tjx666/power-edit/blob/main/assets/screenshots/select-by-indent.gif?raw=true)
+
+recommend set following shortcut:
+
+```jsonc
+[
+  {
+    "key": "ctrl+shift+i",
+    "command": "power-edit.selectByIndent",
+    "when": "editorTextFocus && editorLangId != 'markdown'"
+  }
+]
+```
+
 ## My extensions
 
 - [Open in External App](https://github.com/tjx666/open-in-external-app)
