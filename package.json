@@ -49,8 +49,12 @@
     "contributes": {
         "commands": [
             {
-                "command": "power-edit.helloWorld",
-                "title": "Hello World"
+                "command": "power-edit.selectBracketContent",
+                "title": "Power Edit: Select Bracket Content"
+            },
+            {
+                "command": "power-edit.selectBracket",
+                "title": "Power Edit: Select Bracket"
             }
         ]
     },
