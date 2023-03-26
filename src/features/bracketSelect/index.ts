@@ -74,14 +74,13 @@ function getSearchContext(editor: vscode.TextEditor, selection: vscode.Selection
     };
 }
 
-export function expandSelection(editor: vscode.TextEditor, includeBracket: boolean) {
+export function selectBracketMultiCursor(editor: vscode.TextEditor, includeBracket: boolean) {
     editor.selections = editor.selections.map((originSelection) => {
-        const newSelect = selectText(editor, originSelection, includeBracket);
-        return newSelect ?? originSelection;
+        return selectBracket(editor, originSelection, includeBracket) ?? originSelection;
     });
 }
 
-function selectText(
+function selectBracket(
     editor: vscode.TextEditor,
     selection: vscode.Selection,
     includeBracket: boolean,

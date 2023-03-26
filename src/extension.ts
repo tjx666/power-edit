@@ -22,11 +22,19 @@ export function activate(context: vscode.ExtensionContext) {
     };
 
     registerTextEditorCommand('selectBracketContent', (editor: vscode.TextEditor) =>
-        import('./features/bracketSelect/index').then((mod) => mod.expandSelection(editor, false)),
+        import('./features/bracketSelect/index').then((mod) =>
+            mod.selectBracketMultiCursor(editor, false),
+        ),
     );
 
     registerTextEditorCommand('selectBracket', (editor: vscode.TextEditor) =>
-        import('./features/bracketSelect/index').then((mod) => mod.expandSelection(editor, true)),
+        import('./features/bracketSelect/index').then((mod) =>
+            mod.selectBracketMultiCursor(editor, true),
+        ),
+    );
+
+    registerTextEditorCommand('selectByIndent', (editor: vscode.TextEditor) =>
+        import('./features/selectByIndent').then((mod) => mod.selectByIndentMultiCursor(editor)),
     );
 }
 
