@@ -1,5 +1,15 @@
 <!-- https://keepachangelog.com/en/1.0.0/ -->
 
+## 1.0.0 - 2023-04-27
+
+### Breaking Change
+
+- remove configuration
+
+### Changed
+
+- update extension logo
+
 ## 0.0.3 - 2023-03-27
 
 ### Added
