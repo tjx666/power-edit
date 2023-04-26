@@ -5,7 +5,6 @@
 import vscode from 'vscode';
 
 import { isBracketsMatch, isCloseBracket, isOpenBracket, isQuoteBracket } from './utils';
-import { configuration } from '../../configuration';
 
 class SearchResult {
     bracket: string;
@@ -79,9 +78,6 @@ export async function selectBracketMultiCursor(editor: vscode.TextEditor, includ
     editor.selections = editor.selections.map((originSelection) => {
         return selectBracket(editor, originSelection, includeBracket) ?? originSelection;
     });
-    if (configuration.copyWhenSelectBracket) {
-        await vscode.commands.executeCommand('editor.action.clipboardCopyAction');
-    }
 }
 
 function selectBracket(
