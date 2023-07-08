@@ -2,6 +2,9 @@ import vscode from 'vscode';
 
 export function activate(context: vscode.ExtensionContext) {
     import('./features/autoKeepTempEditor').then((mod) => mod.autoKeepTempEditor(context));
+    import('./features/autoScrollToFirstConflict').then((mod) =>
+        mod.autoScrollToFirstConflict(context),
+    );
 
     const { commands } = vscode;
 
