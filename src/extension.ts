@@ -1,6 +1,8 @@
 import vscode from 'vscode';
 
 export function activate(context: vscode.ExtensionContext) {
+    import('./features/autoKeepTempEditor').then((mod) => mod.autoKeepTempEditor(context));
+
     const { commands } = vscode;
 
     const registerTextEditorCommand = (

@@ -45,7 +45,9 @@
             "href": "https://github.com/tjx666/power-edit"
         }
     ],
-    "activationEvents": [],
+    "activationEvents": [
+        "onStartupFinished"
+    ],
     "contributes": {
         "commands": [
             {
