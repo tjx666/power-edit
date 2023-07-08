@@ -1,5 +1,11 @@
 <!-- https://keepachangelog.com/en/1.0.0/ -->
 
+## v1.1.2 (2023-07-08)
+
+[compare changes](https://github.com/tjx666/power-edit/compare/v1.1.1...v1.1.2 '2023-07-08')
+
+[View changes on GitHub](https://github.com/tjx666/power-edit/compare/v1.1.1...v1.1.2 '2023-07-08')
+
 ## v1.1.1 (2023-07-08)
 
 ### 🐞 Bug Fixes
