@@ -1,5 +1,17 @@
 <!-- https://keepachangelog.com/en/1.0.0/ -->
 
+## v1.1.1 (2023-07-08)
+
+### 🐞 Bug Fixes
+
+- Forget to update engine.vscode ([a07d999](https://github.com/tjx666/power-edit/commit/a07d999))
+
+### ❤️ Contributors
+
+- YuTengjing ([@tjx666](http://github.com/tjx666))
+
+[View changes on GitHub](https://github.com/tjx666/power-edit/compare/v1.1.0...v1.1.1 '2023-07-08')
+
 ## v1.1.0 (2023-07-08)
 
 ### 🚀 Features
