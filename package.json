@@ -28,7 +28,10 @@
         "duplicate",
         "edit",
         "move",
-        "select"
+        "select",
+        "git",
+        "temp",
+        "conflict"
     ],
     "categories": [
         "Other"
@@ -36,7 +39,7 @@
     "main": "./out/extension.js",
     "icon": "assets/logo.png",
     "engines": {
-        "vscode": "^1.78.0"
+        "vscode": "^1.80.0"
     },
     "badges": [
         {
