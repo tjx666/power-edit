@@ -52,7 +52,7 @@ recommend set following shortcut:
 
 ### Auto keep Temp File
 
-Like git error file.
+Like git error file, the temp file very easily disappear if not keep it.
 
 Before:
 
@@ -65,6 +65,8 @@ After:
 ### Auto Go to First Conflict
 
 ![Auto Go to First Conflict](https://github.com/tjx666/power-edit/blob/main/assets/screenshots/auto-go-to-first-conflict.gif?raw=true)
+
+ref: <https://github.com/microsoft/vscode/issues/186091>
 
 ## My extensions
 
