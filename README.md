@@ -50,6 +50,22 @@ recommend set following shortcut:
 ]
 ```
 
+### Auto keep Temp File
+
+Like git error file.
+
+Before:
+
+![Before](https://github.com/tjx666/power-edit/blob/main/assets/screenshots/auto-keep-temp-file-before.gif?raw=true)
+
+After:
+
+![After](https://github.com/tjx666/power-edit/blob/main/assets/screenshots/auto-keep-temp-file-after.gif?raw=true)
+
+### Auto Go to First Conflict
+
+![Auto Go to First Conflict](https://github.com/tjx666/power-edit/blob/main/assets/screenshots/auto-go-to-first-conflict.gif?raw=true)
+
 ## My extensions
 
 - [Open in External App](https://github.com/tjx666/open-in-external-app)
