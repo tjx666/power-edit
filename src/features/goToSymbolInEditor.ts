@@ -4,8 +4,10 @@ import vscode from 'vscode';
 export async function goToSymbolInEditor(editor: TextEditor) {
     const cursorPosition = editor.selection.active;
     const wordRange = editor.document.getWordRangeAtPosition(cursorPosition);
-    if (!wordRange) return;
+    if (!wordRange) {
+        return vscode.commands.executeCommand('workbench.action.gotoSymbol');
+    }
 
     const currentWord = editor.document.getText(wordRange);
-    await vscode.commands.executeCommand('workbench.action.quickOpen', `@ ${currentWord}`);
+    return vscode.commands.executeCommand('workbench.action.quickOpen', `@${currentWord}`);
 }
