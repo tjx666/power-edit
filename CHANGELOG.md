@@ -1,5 +1,17 @@
 <!-- https://keepachangelog.com/en/1.0.0/ -->
 
+## v1.2.0 (2023-07-10)
+
+### 🚀 Features
+
+- Command `Go to Symbol in Editor` ([66a8ec1](https://github.com/tjx666/power-edit/commit/66a8ec1))
+
+### ❤️ Contributors
+
+- YuTengjing ([@tjx666](http://github.com/tjx666))
+
+[View changes on GitHub](https://github.com/tjx666/power-edit/compare/v1.1.2...v1.2.0 '2023-07-10')
+
 ## v1.1.2 (2023-07-08)
 
 [compare changes](https://github.com/tjx666/power-edit/compare/v1.1.1...v1.1.2 '2023-07-08')
