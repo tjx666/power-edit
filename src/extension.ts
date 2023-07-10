@@ -1,20 +1,15 @@
-import vscode from 'vscode';
+import type { ExtensionContext, TextEditor, TextEditorEdit } from 'vscode';
+import { commands } from 'vscode';
 
-export function activate(context: vscode.ExtensionContext) {
+export function activate(context: ExtensionContext) {
     import('./features/autoKeepTempEditor').then((mod) => mod.autoKeepTempEditor(context));
     import('./features/autoScrollToFirstConflict').then((mod) =>
         mod.autoScrollToFirstConflict(context),
     );
 
-    const { commands } = vscode;
-
     const registerTextEditorCommand = (
         commandName: string,
-        callback: (
-            textEditor: vscode.TextEditor,
-            edit: vscode.TextEditorEdit,
-            ...args: any[]
-        ) => void,
+        callback: (textEditor: TextEditor, edit: TextEditorEdit, ...args: any[]) => void,
         thisArg?: any,
     ) => {
         const cmd = commands.registerTextEditorCommand(
@@ -26,20 +21,24 @@ export function activate(context: vscode.ExtensionContext) {
         return cmd;
     };
 
-    registerTextEditorCommand('selectBracketContent', (editor: vscode.TextEditor) =>
+    registerTextEditorCommand('selectBracketContent', (editor: TextEditor) =>
         import('./features/bracketSelect/index').then((mod) =>
             mod.selectBracketMultiCursor(editor, false),
         ),
     );
 
-    registerTextEditorCommand('selectBracket', (editor: vscode.TextEditor) =>
+    registerTextEditorCommand('selectBracket', (editor: TextEditor) =>
         import('./features/bracketSelect/index').then((mod) =>
             mod.selectBracketMultiCursor(editor, true),
         ),
     );
 
-    registerTextEditorCommand('selectByIndent', (editor: vscode.TextEditor) =>
+    registerTextEditorCommand('selectByIndent', (editor: TextEditor) =>
         import('./features/selectByIndent').then((mod) => mod.selectByIndentMultiCursor(editor)),
+    );
+
+    registerTextEditorCommand('goToSymbolInEditor', (editor: TextEditor) =>
+        import('./features/goToSymbolInEditor').then((mod) => mod.goToSymbolInEditor(editor)),
     );
 }
 

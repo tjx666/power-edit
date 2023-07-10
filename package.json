@@ -31,7 +31,10 @@
         "select",
         "git",
         "temp",
-        "conflict"
+        "conflict",
+        "jump",
+        "goto",
+        "symbol"
     ],
     "categories": [
         "Other"
@@ -64,6 +67,10 @@
             {
                 "command": "power-edit.selectByIndent",
                 "title": "Power Edit: Select by Indent"
+            },
+            {
+                "command": "power-edit.goToSymbolInEditor",
+                "title": "Power Edit: Go to Symbol in Editor"
             }
         ]
     },
