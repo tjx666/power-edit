@@ -1,7 +1,7 @@
 {
     "name": "power-edit",
     "displayName": "Power Edit",
-    "version": "1.2.0",
+    "version": "1.3.0",
     "description": "a vscode extension enhance edit experience",
     "publisher": "YuTengjing",
     "private": true,

@@ -1,5 +1,17 @@
 <!-- https://keepachangelog.com/en/1.0.0/ -->
 
+## v1.3.0 (2023-07-10)
+
+### 🚀 Features
+
+- Just call builtin go to symbol when no cursor word ([1567878](https://github.com/tjx666/power-edit/commit/1567878))
+
+### ❤️ Contributors
+
+- YuTengjing ([@tjx666](http://github.com/tjx666))
+
+[View changes on GitHub](https://github.com/tjx666/power-edit/compare/v1.2.0...v1.3.0 '2023-07-10')
+
 ## v1.2.0 (2023-07-10)
 
 ### 🚀 Features
