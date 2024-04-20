@@ -1,5 +1,5 @@
 import type { TextDocument, TextEditor } from 'vscode';
-import { Selection, Range, Position } from 'vscode';
+import { Position, Range, Selection } from 'vscode';
 
 function getLineIndent(document: TextDocument, lineNumber: number) {
     if (lineNumber < 0 || lineNumber >= document.lineCount) return;
