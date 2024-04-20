@@ -1,5 +1,17 @@
 <!-- https://keepachangelog.com/en/1.0.0/ -->
 
+## v1.4.0 (2024-04-21)
+
+### 🚀 Features
+
+- New command `Search in Git Changed Files` ([89cd3be](https://github.com/tjx666/power-edit/commit/89cd3be))
+
+### ❤️ Contributors
+
+- YuTengjing <yutengjing@openYuTengjingart.ai>
+
+[View changes on GitHub](https://github.com/tjx666/power-edit/compare/v1.3.0...v1.4.0 '2024-04-21')
+
 ## v1.3.0 (2023-07-10)
 
 ### 🚀 Features
