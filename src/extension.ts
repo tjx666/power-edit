@@ -40,6 +40,14 @@ export function activate(context: ExtensionContext) {
     registerTextEditorCommand('goToSymbolInEditor', (editor: TextEditor) =>
         import('./features/goToSymbolInEditor').then((mod) => mod.goToSymbolInEditor(editor)),
     );
+
+    context.subscriptions.push(
+        commands.registerCommand('power-edit.searchInGitChangedFiles', () =>
+            import('./features/searchInGitChangedFiles').then((mod) =>
+                mod.searchInGitChangedFiles(),
+            ),
+        ),
+    );
 }
 
 export function deactivate() {}

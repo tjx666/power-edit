@@ -2,6 +2,7 @@
     "name": "power-edit",
     "displayName": "Power Edit",
     "version": "1.3.0",
+    "packageManager": "pnpm@9.0.4",
     "description": "a vscode extension enhance edit experience",
     "publisher": "YuTengjing",
     "private": true,
@@ -58,19 +59,23 @@
         "commands": [
             {
                 "command": "power-edit.selectBracketContent",
-                "title": "Power Edit: Select Bracket Content"
+                "title": "Select Bracket Content"
             },
             {
                 "command": "power-edit.selectBracket",
-                "title": "Power Edit: Select Bracket"
+                "title": "Select Bracket"
             },
             {
                 "command": "power-edit.selectByIndent",
-                "title": "Power Edit: Select by Indent"
+                "title": "Select by Indent"
             },
             {
                 "command": "power-edit.goToSymbolInEditor",
-                "title": "Power Edit: Go to Symbol in Editor"
+                "title": "Go to Symbol in Editor"
+            },
+            {
+                "command": "power-edit.searchInGitChangedFiles",
+                "title": "Search in Git Changed Files"
             }
         ]
     },
