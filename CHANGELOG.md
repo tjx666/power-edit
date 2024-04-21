@@ -1,5 +1,11 @@
 <!-- https://keepachangelog.com/en/1.0.0/ -->
 
+## v1.4.3 (2024-04-21)
+
+No significant changes
+
+[View changes on GitHub](https://github.com/tjx666/power-edit/compare/v1.4.2...v1.4.3 '2024-04-21')
+
 ## v1.4.2 (2024-04-21)
 
 ### 🐞 Bug Fixes
