@@ -24,13 +24,13 @@ recommend set following shortcut:
   {
     "key": "ctrl+]",
     "command": "power-edit.selectBracketContent",
-    "when": "editorTextFocus && editorLangId != 'markdown'"
+    "when": "editorTextFocus && editorLangId != 'markdown'",
   },
   {
     "key": "ctrl+shift+]",
     "command": "power-edit.selectBracket",
-    "when": "editorTextFocus && editorLangId != 'markdown'"
-  }
+    "when": "editorTextFocus && editorLangId != 'markdown'",
+  },
 ]
 ```
 
@@ -45,8 +45,8 @@ recommend set following shortcut:
   {
     "key": "ctrl+shift+i",
     "command": "power-edit.selectByIndent",
-    "when": "editorTextFocus && editorLangId != 'markdown'"
-  }
+    "when": "editorTextFocus && editorLangId != 'markdown'",
+  },
 ]
 ```
 
@@ -67,6 +67,12 @@ After:
 ![Auto Go to First Conflict](https://github.com/tjx666/power-edit/blob/main/assets/screenshots/auto-go-to-first-conflict.gif?raw=true)
 
 ref: <https://github.com/microsoft/vscode/issues/186091>
+
+### Search in Git Changed Files
+
+![Search in Git Changed Files](https://github.com/tjx666/power-edit/blob/main/assets/screenshots/search-in-git-changed-files.gif?raw=true)
+
+ref: [vscode search for a text only in git changes?](https://stackoverflow.com/questions/58875783/vscode-search-for-a-text-only-in-git-changes)
 
 ## My extensions
 
