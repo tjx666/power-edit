@@ -1,5 +1,17 @@
 <!-- https://keepachangelog.com/en/1.0.0/ -->
 
+## v1.4.2 (2024-04-21)
+
+### 🐞 Bug Fixes
+
+- Changed filename contains special chars ([7d6dd35](https://github.com/tjx666/power-edit/commit/7d6dd35))
+
+### ❤️ Contributors
+
+- YuTengjing <yutengjing@openYuTengjingart.ai>
+
+[View changes on GitHub](https://github.com/tjx666/power-edit/compare/v1.4.1...v1.4.2 '2024-04-21')
+
 ## v1.4.1 (2024-04-21)
 
 ### 🚀 Features
