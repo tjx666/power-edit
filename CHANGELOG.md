@@ -1,5 +1,17 @@
 <!-- https://keepachangelog.com/en/1.0.0/ -->
 
+## v1.4.1 (2024-04-21)
+
+### 🚀 Features
+
+- Add menu item for "Search in Git Changed Files" command ([68d31c9](https://github.com/tjx666/power-edit/commit/68d31c9))
+
+### ❤️ Contributors
+
+- YuTengjing <yutengjing@openYuTengjingart.ai>
+
+[View changes on GitHub](https://github.com/tjx666/power-edit/compare/v1.4.0...v1.4.1 '2024-04-21')
+
 ## v1.4.0 (2024-04-21)
 
 ### 🚀 Features
