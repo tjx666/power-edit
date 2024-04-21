@@ -56,6 +56,15 @@
         "onStartupFinished"
     ],
     "contributes": {
+        "menus": {
+            "view/title": [
+                {
+                    "command": "power-edit.searchInGitChangedFiles",
+                    "when": "view == workbench.view.search",
+                    "group": "navigation"
+                }
+            ]
+        },
         "commands": [
             {
                 "command": "power-edit.selectBracketContent",
@@ -75,7 +84,8 @@
             },
             {
                 "command": "power-edit.searchInGitChangedFiles",
-                "title": "Search in Git Changed Files"
+                "title": "Search in Git Changed Files",
+                "icon": "$(diff-added)"
             }
         ]
     },

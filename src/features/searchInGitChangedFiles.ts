@@ -11,6 +11,7 @@ export async function searchInGitChangedFiles() {
         return vscode.window.showErrorMessage('No workspace is opened');
     }
 
+    // maybe the workspace is in a subdirectory of the git repo
     let { stdout: gitRepoDir } = await exec('git rev-parse --show-toplevel', { cwd });
     gitRepoDir = gitRepoDir.trim();
     if (!gitRepoDir) {
@@ -18,21 +19,28 @@ export async function searchInGitChangedFiles() {
     }
 
     cwd = gitRepoDir;
-    // Step 1: Detect Git changes
-    const [modifiedFilesOutput, addedFilesOutput] = await Promise.all([
+    const outputList = await Promise.all([
+        // staged
+        exec('git diff --name-only --cached', { cwd }),
+        // changed and not staged
         exec('git diff --name-only', { cwd }),
+        // new added
         exec('git ls-files --others --exclude-standard', { cwd }),
     ]);
-    if (modifiedFilesOutput.stderr || addedFilesOutput.stderr) {
+    if (outputList.some(({ stderr }) => stderr)) {
         return vscode.window.showErrorMessage('Failed to detect Git changes');
     }
 
-    const changedFiles = `${modifiedFilesOutput.stdout}\n${addedFilesOutput.stdout}`
+    let changedFiles = outputList
+        .map(({ stdout }) => stdout)
+        .join('\n')
         .split(/\r?\n/)
-        .filter(Boolean);
+        .filter((line) => line.trim() !== '');
+    changedFiles = [...new Set(changedFiles)];
 
     return vscode.commands.executeCommand('workbench.action.findInFiles', {
         triggerSearch: true,
+        searchDetail: true,
         filesToInclude: changedFiles.join(', '),
     });
 }
